@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="https://www.alurastart.com.br/assets/favicon.1720710819.ico" type="image/x-icon">
     <title>Guia de uso do fórum Start</title>
 </head>
@@ -20,22 +21,23 @@
         <nav class="header__navigation">
             <ul class="header__navigation-list">
                 <li class="header__navigation-list-item">
-                    <a href="">Início</a>
-                </li>
-                <li class="header__navigation-list-item">
                     <a href="#guia-de-uso-do-forum">Guia de uso do fórum</a>
                 </li>
                 <li class="header__navigation-list-item">
                     <a href="#perguntas-frequentes">Perguntas frequentes</a>
                 </li>
+                <li class="header__navigation-list-item">
+                    <a href="#topicos-de-exemplo">Tópicos de exemplo</a>
+                </li>
             </ul>
         </nav>
-        <div class="header__forum-link">
+        <div class="forum-link">
             <a target="_blank" href="https://cursos.alura.com.br/forum/">Fórum Start</a>
         </div>
     </header>
+    <a class="button-return-top" href="#inicio"><i class="bi bi-arrow-up-circle-fill"></i></a>
 
-    <div class="banner">
+    <div class="banner" id="inicio">
         <h1 class="banner__title">Fórum Start</h1>
         <div class="banner__content">
             <h2 class="banner__content-title">Lorem ipsum dolor sit amet.</h2>
@@ -74,16 +76,18 @@
                         <a href="#guia-como-interagir-no-forum">Como interagir no fórum</a>
                     </li>
                     <li class="main__section-navigation-list-item">
-                        <a href="#guia-como-acompanhar-minhas-interacoes-no-forum">Como acompanhar as minhas interações no fórum</a>
+                        <a href="#guia-como-acompanhar-minhas-interacoes-no-forum">Como acompanhar as minhas interações
+                            no fórum</a>
                     </li>
                     <li class="main__section-navigation-list-item">
-                        <a href="">Regras de interação no fórum</a>
+                        <a href="#guia-regras-de-interacao-no-forum">Regras de interação no fórum</a>
                     </li>
                 </ul>
             </nav>
             <div class="main__section-subjects-list">
-                <h2 class="main__subjects-list-item-title" id="guia-apresentacao-do-forum">Apresentação do fórum</h2>
                 <section class="main__subjects-list-item">
+                    <h2 class="main__subjects-list-item-title" id="guia-apresentacao-do-forum">Apresentação do fórum
+                    </h2>
                     <div>
                         <h3 class="main__subjects-list-item-subtitle">O que é o fórum e qual é o objetivo dele?</h3>
 
@@ -102,7 +106,8 @@
                             Cada unidade tem uma área separada no fórum. Na parte de cima da página, está o nome da
                             unidade em que você está. Abaixo, você encontra o botão “Criar novo tópico” e todas as
                             interações (dúvidas, sugestões, feedbacks, etc.) que já foram feitas na unidade. Cada
-                            interação é chamada de <strong>“tópico”</strong>. Na imagem a seguir, temos um exemplo dessa estrutura, e
+                            interação é chamada de <strong>“tópico”</strong>. Na imagem a seguir, temos um exemplo dessa
+                            estrutura, e
                             presente nela 3 tópicos.
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-01.png"
@@ -117,37 +122,50 @@
                         <img class="main__subjects-list-item-image" src="img/image-02.png" alt="">
                     </div>
                 </section>
-                <h2 class="main__subjects-list-item-title" id="guia-como-acessar-o-forum">Como acessar o fórum</h2>
                 <section class="main__subjects-list-item">
+                    <h2 class="main__subjects-list-item-title" id="guia-como-acessar-o-forum">Como acessar o fórum</h2>
                     <div>
                         <p class="main__subjects-list-item-text">
-                            Para acessar o fórum, você deve estar em uma atividade e descer até o final da tela. Lá, você encontrará os botões “Discutir no fórum” e “Fórum da unidade”. Os dois levam ao fórum, mas de formas diferentes:
+                            Para acessar o fórum, você deve estar em uma atividade e descer até o final da tela. Lá,
+                            você encontrará os botões “Discutir no fórum” e “Fórum da unidade”. Os dois levam ao fórum,
+                            mas de formas diferentes:
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-03.png" alt="">
                     </div>
                     <div>
                         <h3 class="main__subjects-list-item-subtitle">Botão "Discutir no fórum"</h3>
                         <p class="main__subjects-list-item-text">
-                            <strong>É a forma mais recomendada</strong> para acessar o fórum. Acessando por meio deste botão, quando você posta um tópico, ele aparece no fórum <strong>indicando a unidade, aula e atividade de onde ele foi criado</strong>, como indicado a seguir.
+                            <strong>É a forma mais recomendada</strong> para acessar o fórum. Acessando por meio deste
+                            botão, quando você posta um tópico, ele aparece no fórum <strong>indicando a unidade, aula e
+                                atividade de onde ele foi criado</strong>, como indicado a seguir.
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-04.png" alt="">
                     </div>
                     <div>
                         <h3 class="main__subjects-list-item-subtitle">Botão "Fórum da unidade"</h3>
                         <p class="main__subjects-list-item-text">
-                            Postando um tópico no fórum por este botão, ele aparece no fórum com menos detalhes, <strong>mostrando somente a unidade de onde foi criado</strong>:
+                            Postando um tópico no fórum por este botão, ele aparece no fórum com menos detalhes,
+                            <strong>mostrando somente a unidade de onde foi criado</strong>:
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-05.png" alt="">
                         <p class="main__subjects-list-item-text reminder">
-                            Para ajudar quem for responder o seu tópico, <strong>é sempre melhor que você crie tópicos usando a opção “Discutir no fórum”</strong>, pois essa opção fornece mais detalhes do contexto do tópico. Busque usar a outra opção apenas quando quiser explorar o fórum geral da unidade.
+                            Para ajudar quem for responder o seu tópico, <strong>é sempre melhor que você crie tópicos
+                                usando a opção “Discutir no fórum”</strong>, pois essa opção fornece mais detalhes do
+                            contexto do tópico. Busque usar a outra opção apenas quando quiser explorar o fórum geral da
+                            unidade.
                         </p>
                     </div>
                 </section>
-                <h2 class="main__subjects-list-item-title" id="guia-como-interagir-no-forum">Como interagir no fórum</h2>
                 <section class="main__subjects-list-item">
+                    <h2 class="main__subjects-list-item-title" id="guia-como-interagir-no-forum">Como interagir no fórum
+                    </h2>
                     <div>
                         <p class="main__subjects-list-item-text">
-                            Para criar um novo tópico, primeiramente, você deve <a href="#guia-como-acessar-o-forum">acessar o fórum</a>. <strong>Caso acesse pelo botão “Fórum da unidade”, é preciso clicar em “Criar novo tópico”</strong>, que fica no canto superior direito da tela. <strong>Se usar o botão “Discutir no fórum”, você deve descer a tela do fórum até o final</strong> para iniciar um novo tópico.
+                            Para criar um novo tópico, primeiramente, você deve <a
+                                href="#guia-como-acessar-o-forum">acessar o fórum</a>. <strong>Caso acesse pelo botão
+                                “Fórum da unidade”, é preciso clicar em “Criar novo tópico”</strong>, que fica no canto
+                            superior direito da tela. <strong>Se usar o botão “Discutir no fórum”, você deve descer a
+                                tela do fórum até o final</strong> para iniciar um novo tópico.
                             <br><br>
                             Ao fazer isso, você verá a seguinte tela, com alguns campos a serem preenchidos:
                         </p>
@@ -160,21 +178,35 @@
                     <div>
                         <h3 class="main__subjects-list-item-subtitle">Como escrever um tópico da melhor forma</h3>
                         <p class="main__subjects-list-item-text">
-                            Primeiramente, <strong>não forneça dados pessoais (endereços, telefones, senhas, etc.) nos seus tópicos</strong>. Nenhuma dessas informações é necessária para você ter uma resposta.
+                            Primeiramente, <strong>não forneça dados pessoais (endereços, telefones, senhas, etc.) nos
+                                seus tópicos</strong>. Nenhuma dessas informações é necessária para você ter uma
+                            resposta.
                             <br><br>
-                            <strong>1. Título:</strong> Descreva o seu tópico de forma breve, porém, buscando ser o mais específico possível. Além disso, abaixo do título existem alguns botões (Sugestão, Reclamação, Projeto, Dúvida e Bug), é muito importante que você clique no botão que classificar melhor o seu tópico, isso adiciona um texto no início do título que ajuda quem for responder a identificar do que o tópico se trata:
+                            <strong>1. Título:</strong> Descreva o seu tópico de forma breve, porém, buscando ser o mais
+                            específico possível. Além disso, abaixo do título existem alguns botões (Sugestão,
+                            Reclamação, Projeto, Dúvida e Bug), é muito importante que você clique no botão que
+                            classificar melhor o seu tópico, isso adiciona um texto no início do título que ajuda quem
+                            for responder a identificar do que o tópico se trata:
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-07.png" alt="">
                         <p class="main__subjects-list-item-text">
-                            <strong>2. Desenvolvimento:</strong> Inclua todos os detalhes necessários. Para um pedido de ajuda, <strong>descreva o contexto do problema, quais testes você fez, e o que obteve de resultados</strong>. Para uma sugestão, explique qual situação te levou à sugestão e por que acredita que sua solução pode funcionar.
+                            <strong>2. Desenvolvimento:</strong> Inclua todos os detalhes necessários. Para um pedido de
+                            ajuda, <strong>descreva o contexto do problema, quais testes você fez, e o que obteve de
+                                resultados</strong>. Para uma sugestão, explique qual situação te levou à sugestão e por
+                            que acredita que sua solução pode funcionar.
                             <br><br>
-                            Além disso, é muito interessante que você <strong>utilize capturas de tela, links, códigos, repositórios, projetos, etc</strong>. Isso ajuda muito quem vai te responder, agilizando o processo da construção de resposta, e tornando o conteúdo dela mais preciso. No nosso fórum, existe uma forma correta de utilizar cada um desses recursos.
+                            Além disso, é muito interessante que você <strong>utilize capturas de tela, links, códigos,
+                                repositórios, projetos, etc</strong>. Isso ajuda muito quem vai te responder, agilizando
+                            o processo da construção de resposta, e tornando o conteúdo dela mais preciso. No nosso
+                            fórum, existe uma forma correta de utilizar cada um desses recursos.
                         </p>
                     </div>
                     <div>
                         <h3 class="main__subjects-list-item-subtitle">Ferramentas para a construção de um tópico</h3>
                         <p class="main__subjects-list-item-text">
-                            Na tela de desenvolvimento do seu tópico, há uma lista com diversos ícones na parte superior, são ferramentas da linguagem MarkDown disponíveis para a construção do seu tópico. Resumidamente, as ferramentas funcionam da seguinte forma:
+                            Na tela de desenvolvimento do seu tópico, há uma lista com diversos ícones na parte
+                            superior, são ferramentas da linguagem MarkDown disponíveis para a construção do seu tópico.
+                            Resumidamente, as ferramentas funcionam da seguinte forma:
                         </p>
                         <table class="main__subjects-list-item-table">
                             <thead>
@@ -207,7 +239,7 @@
                                 <tr>
                                     <td><img src="img/image-table-simple-04.png" alt=""></td>
                                     <td>Cria uma lista ordenada</td>
-                                    <td> 
+                                    <td>
                                         1. Primeiro item <br>
                                         2. Segundo item <br>
                                         3. Terceiro item <br>
@@ -252,7 +284,7 @@
                                 </tr>
                                 <tr>
                                     <td><img src="img/image-table-simple-09.png" alt=""></td>
-                                    <td>Insere uma imagem por  meio da URL/link</td>
+                                    <td>Insere uma imagem por meio da URL/link</td>
                                     <td>![Texto alternativo](https://link-da-imagem.png)</td>
                                     <td><img src="img/image-table-result-09.png" alt=""></td>
                                 </tr>
@@ -260,7 +292,8 @@
                                     <td><img src="img/image-table-simple-10.png" alt=""></td>
                                     <td>Insere uma imagem salva no dispositivo</td>
                                     <td>Você deve clicar no ícone, selecionar a imagem e clicar em “Abrir”.</td>
-                                    <td>Com uma imagem compatível, ela é exibida, caso contrário, será o texto alternativo, como na opção anterior.</td>
+                                    <td>Com uma imagem compatível, ela é exibida, caso contrário, será o texto
+                                        alternativo, como na opção anterior.</td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/image-table-simple-11.png" alt=""></td>
@@ -283,37 +316,96 @@
                             </tbody>
                         </table>
                         <p class="main__subjects-list-item-text">
-                            Com a pré-visualização ativada (última opção), o lado esquerdo mostra o código em MarkDown e o lado direito mostra o resultado do código. Tendo seu tópico construído, basta que você clique no botão de enviar, na parte inferior direita da tela, para postar seu tópico:
+                            Com a pré-visualização ativada (última opção), o lado esquerdo mostra o código em MarkDown e
+                            o lado direito mostra o resultado do código. Tendo seu tópico construído, basta que você
+                            clique no botão de enviar, na parte inferior direita da tela, para postar seu tópico:
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-08.png" alt="">
                         <p class="main__subjects-list-item-text">
                             Após enviar o seu tópico, você tem acesso às seguintes funções nele:
                         </p>
-                         <img class="main__subjects-list-item-image" src="img/image-09.png" alt="">
-                         <p class="main__subjects-list-item-text">
-                             <strong>- Botões “Editar tópico” e “Editar”:</strong> Lhe permitem editar tanto o título quanto o texto do seu tópico. Você pode editar somente os tópicos e respostas que você criou.
-                             <br><br>
-                             <strong>- Botão “Acompanhar tópico”:</strong> Essa opção faz com que você receba um e-mail quando alguém responder o tópico. O e-mail indica quem respondeu e tem um botão que te leva para a resposta no fórum. Você pode marcar essa opção em qualquer tópico, mas ela é ativada automaticamente nos seus tópicos.
-                             <br><br>
-                             As respostas para o seu tópico aparecem da seguinte forma no fórum:
+                        <img class="main__subjects-list-item-image" src="img/image-09.png" alt="">
+                        <p class="main__subjects-list-item-text">
+                            <strong>- Botões “Editar tópico” e “Editar”:</strong> Lhe permitem editar tanto o título
+                            quanto o texto do seu tópico. Você pode editar somente os tópicos e respostas que você
+                            criou.
+                            <br><br>
+                            <strong>- Botão “Acompanhar tópico”:</strong> Essa opção faz com que você receba um e-mail
+                            quando alguém responder o tópico. O e-mail indica quem respondeu e tem um botão que te leva
+                            para a resposta no fórum. Você pode marcar essa opção em qualquer tópico, mas ela é ativada
+                            automaticamente nos seus tópicos.
+                            <br><br>
+                            As respostas para o seu tópico aparecem da seguinte forma no fórum:
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-10.png" alt="">
                         <p class="main__subjects-list-item-text">
-                            No canto inferior direito fica o botão “Marcar como solução”. Você deve clicar nele caso a resposta seja útil para a sua questão, isso marca o tópico como solucionado e destaca a resposta que foi a solução. Outras pessoas podem marcar as suas respostas como solução também.
+                            No canto inferior direito fica o botão “Marcar como solução”. Você deve clicar nele caso a
+                            resposta seja útil para a sua questão, isso marca o tópico como solucionado e destaca a
+                            resposta que foi a solução. Outras pessoas podem marcar as suas respostas como solução
+                            também.
                         </p>
                     </div>
                     <div>
                         <h3 class="main__subjects-list-item-subtitle">Como responder um tópico</h3>
                         <p class="main__subjects-list-item-text">
-                            No fórum da Start, qualquer pessoa pode interagir com qualquer tópico que faça parte da sua rede de acesso. Para responder, você deve acessar o tópico, descer a tela até o campo onde você pode escrever sua resposta e, para postar a resposta, basta clicar no botão “Responder”, no canto inferior direito.
+                            No fórum da Start, qualquer pessoa pode interagir com qualquer tópico que faça parte da sua
+                            rede de acesso. Para responder, você deve acessar o tópico, descer a tela até o campo onde
+                            você pode escrever sua resposta e, para postar a resposta, basta clicar no botão
+                            “Responder”, no canto inferior direito.
                         </p>
                         <img class="main__subjects-list-item-image" src="img/image-11.png" alt="">
                     </div>
                 </section>
-                <h2 class="main__subjects-list-item-title" id="guia-como-acompanhar-minhas-interacoes-no-forum">Como acompanhar minhas interações no fórum</h2>
                 <section class="main__subjects-list-item">
+                    <h2 class="main__subjects-list-item-title" id="guia-como-acompanhar-minhas-interacoes-no-forum">Como
+                        acompanhar minhas interações no fórum</h2>
                     <div>
-                        <p class="main__subjects-list-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsam tempora consectetur laborum molestiae natus, id voluptates nostrum reiciendis praesentium atque ullam quibusdam? Quae cumque quidem incidunt modi quos mollitia eveniet exercitationem ab dicta enim, quod repellat saepe? Ad quaerat porro incidunt, numquam commodi accusamus aut distinctio sit ut tenetur.
+                        <p class="main__subjects-list-item-text">
+                            Primeiro, você deve acessar o seu perfil da Alura. Você pode fazer isso abrindo o menu no
+                            canto superior direito da tela e clicando na opção “PERFIL & CERTIFICADOS”.
+                            <br><br>
+                            Esse é o seu perfil da Alura. Na parte superior, você pode ver uma imagem sua (ou a inicial
+                            do seu nome), seu nome e uma breve descrição sua (Biografia). Abaixo disso, estão algumas
+                            informações como a quantidade de unidades e exercícios que você concluiu e, mais para a
+                            esquerda, a quantidade de posts que você já interagiu no fórum.
+                            <br><br>
+                            Clicando nessa última opção, você acessa uma página com todos os tópicos que você já
+                            participou de alguma forma, conforme mostrado nas imagens a seguir.
+                        </p>
+                        <img class="main__subjects-list-item-image" src="img/image-12.png" alt="">
+                        <img class="main__subjects-list-item-image" src="img/image-13.png" alt="">
+                        <p class="main__subjects-list-item-text">
+                            Nessa página, os tópicos são divididos em 3 categorias:
+                            <br><br>
+                            <strong>- Todos:</strong> Tópicos que você já interagiu ou acompanha.
+                            <br><br>
+                            <strong>- Sem resposta:</strong> Tópicos que você criou e estão sem resposta.
+                            <br><br>
+                            <strong>- Solucionados:</strong> Seus tópicos e respostas que foram marcados como solução.
+                        </p>
+                    </div>
+                </section>
+                <section class="main__subjects-list-item">
+                    <h2 class="main__subjects-list-item-title" id="guia-regras-de-interacao-no-forum">Regras de
+                        interação no fórum</h2>
+                    <div>
+                        <p class="main__subjects-list-item-text">
+                            Nosso fórum possui algumas regras básicas de interação e, caso algum tópico e/ou resposta
+                            não esteja de acordo com elas, ele é bloqueado e, dependendo da situação, nossa equipe pode
+                            entrar em contato com a instituição de ensino do autor do tópico e/ou resposta para tomar as
+                            medidas necessárias. Seu tópico não deve conter:
+                            <br><br>
+                            <strong>- Palavras de baixo calão:</strong> Palavrões, xingamentos, ofensas, referência a
+                            atos sexuais, etc.
+                            <br><br>
+                            <strong>- Discriminação:</strong> Mensagens racistas, machistas, LGBTfóbicas, e que tenham
+                            intenção de ofender e/ou discriminar qualquer pessoa, ou grupo.
+                            <br><br>
+                            <strong>- Conteúdo indevido:</strong> Conteúdos de cunho sexual, que faça referência a
+                            crimes e/ou qualquer conteúdo inapropriado para menores.
+                            <br><br>
+                            <strong>- Conteúdo sem relação com a plataforma ou conteúdos:</strong> Qualquer assunto que
+                            não esteja relacionado com o que é apresentado pela Start.
                         </p>
                     </div>
                 </section>
@@ -322,50 +414,157 @@
 
         <section class="main__section" id="perguntas-frequentes">
             <h2 class="main__section-title">
-                <span>_faq</span>
+                <span>_FAQ</span>
                 Perguntas frequentes
             </h2>
-            <p class="main__section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, suscipit!
-                Nemo porro cupiditate ducimus quidem blanditiis, error, aspernatur numquam laboriosam atque cum
-                voluptate voluptatum accusantium dicta aut mollitia quis nesciunt itaque ut quam cumque minus quia
-                excepturi at nobis. Soluta fuga facere reiciendis expedita dolore aperiam ratione. Dolorum, distinctio
-                officia. Excepturi harum ipsam officiis fuga. Animi in, voluptatibus blanditiis quos commodi, quam
-                quisquam architecto accusamus enim ratione laudantium aut. Magnam praesentium officia sit hic. Tempora
-                corrupti provident cupiditate nihil quidem fugit est deserunt harum pariatur ipsam dolores culpa
-                voluptates, excepturi quasi! Sint eum deleniti repellendus dolorum similique? Repellendus, distinctio
-                delectus.</p>
+            <p class="main__section-summary">
+                Existem algumas perguntas no nosso fórum que são bem comuns, a seguir estão as questões que o pessoal mais pede ajuda e as respostas dadas no fórum.
+            </p>
+            <ul class="main__section-dropdown-list">
+                <li class="main__section-dropdown-list-item close">
+                    <div>
+                        <span><i class="bi bi-caret-down-fill"></i></span>
+                        <h2 class="main__section-dropdown-list-item-title">
+                            <span>Scratch</span>
+                            Como compartilhar o link projeto do Scratch na plataforma
+                        </h2>
+                    </div>
+                    <p class="main__section-dropdown-list-item-text">
+                        Para compartilhar o link do seu projeto do Scratch corretamente na nossa plataforma, você deve acessar a página de edição do seu projeto no <a href="https://scratch.mit.edu/mystuff/" target="_blank">Scratch</a> (clicando em "Ver interior" do projeto que deseja compartilhar) e depois clicar em "Compartilhar",  na barra superior da página.
+                        <br><br>
+                        Após isso, você pode copiar o link da barra de pesquisa ou clicar no botão "Copiar o Link" e copiar o primeiro link que aparecer. Agora, basta colar esse link na atividade da nossa plataforma que pede isso e clicar em "Enviar link". Você também pode ou não autorizar o uso do seu projeto.
+                    </p>
+                </li>
+                <li class="main__section-dropdown-list-item close">
+                    <div>
+                        <span><i class="bi bi-caret-down-fill"></i></span>
+                        <h2 class="main__section-dropdown-list-item-title">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                            Como compartilhar o link do projeto do P5.js na plataforma
+                        </h2>
+                    </div>
+                    <p class="main__section-dropdown-list-item-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, obcaecati fugiat voluptates fuga
+                        voluptate tempora explicabo facere facilis excepturi deserunt quisquam maiores dolorum natus
+                        repellat doloremque expedita ipsa perferendis ab voluptatibus aut corporis id quod quidem! Quasi
+                        similique earum aperiam voluptates beatae aliquid natus a facere, maiores, ducimus nihil sunt.
+                    </p>
+                </li>
+                <li class="main__section-dropdown-list-item close">
+                    <div>
+                        <span><i class="bi bi-caret-down-fill"></i></span>
+                        <h2 class="main__section-dropdown-list-item-title">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                            Como saber o que falta para concluir a unidade
+                        </h2>
+                    </div>
+                    <p class="main__section-dropdown-list-item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates animi non consectetur. Atque doloribus voluptate ex? Dolorum mollitia beatae maiores ut vero, ducimus cum illum vitae sit quisquam facilis doloribus molestias suscipit cumque distinctio omnis unde tempora est labore magni aperiam similique sint impedit placeat? Expedita ex, debitis esse qui praesentium quaerat possimus natus doloremque voluptatibus ut officiis, obcaecati laboriosam est cum repudiandae! Fugit consequatur itaque sequi eos, quisquam optio fuga, doloribus, illo deserunt quod tempore. Ex molestias dolor, quos iusto expedita ad ea debitis soluta sit cumque voluptate sunt a quidem nisi voluptatibus in, non dolorum iure exercitationem.
+                    </p>
+                </li>
+                <li class="main__section-dropdown-list-item close">
+                    <div>
+                        <span><i class="bi bi-caret-down-fill"></i></span>
+                        <h2 class="main__section-dropdown-list-item-title">
+                            <span>Certificado</span>
+                            Como emitir o certificado de conclusão de unidade
+                        </h2>
+                    </div>
+                    <p class="main__section-dropdown-list-item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates animi non consectetur. Atque doloribus voluptate ex? Dolorum mollitia beatae maiores ut vero, ducimus cum illum vitae sit quisquam facilis doloribus molestias suscipit cumque distinctio omnis unde tempora est labore magni aperiam similique sint impedit placeat? Expedita ex, debitis esse qui praesentium quaerat possimus natus doloremque voluptatibus ut officiis, obcaecati laboriosam est cum repudiandae! Fugit consequatur itaque sequi eos, quisquam optio fuga, doloribus, illo deserunt quod tempore. Ex molestias dolor, quos iusto expedita ad ea debitis soluta sit cumque voluptate sunt a quidem nisi voluptatibus in, non dolorum iure exercitationem.
+                    </p>
+                </li>
+            </ul>
         </section>
-        <section class="main__section" id="perguntas-frequentes">
+        <section class="main__section" id="topicos-de-exemplo">
             <h2 class="main__section-title">
-                <span>_faq</span>
-                Perguntas frequentes
+                <span>_exemplos</span>
+                Tópicos de exemplo
             </h2>
-            <p class="main__section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, suscipit!
-                Nemo porro cupiditate ducimus quidem blanditiis, error, aspernatur numquam laboriosam atque cum
-                voluptate voluptatum accusantium dicta aut mollitia quis nesciunt itaque ut quam cumque minus quia
-                excepturi at nobis. Soluta fuga facere reiciendis expedita dolore aperiam ratione. Dolorum, distinctio
-                officia. Excepturi harum ipsam officiis fuga. Animi in, voluptatibus blanditiis quos commodi, quam
-                quisquam architecto accusamus enim ratione laudantium aut. Magnam praesentium officia sit hic. Tempora
-                corrupti provident cupiditate nihil quidem fugit est deserunt harum pariatur ipsam dolores culpa
-                voluptates, excepturi quasi! Sint eum deleniti repellendus dolorum similique? Repellendus, distinctio
-                delectus.</p>
-        </section>
-        <section class="main__section" id="perguntas-frequentes">
-            <h2 class="main__section-title">
-                <span>_faq</span>
-                Perguntas frequentes
-            </h2>
-            <p class="main__section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, suscipit!
-                Nemo porro cupiditate ducimus quidem blanditiis, error, aspernatur numquam laboriosam atque cum
-                voluptate voluptatum accusantium dicta aut mollitia quis nesciunt itaque ut quam cumque minus quia
-                excepturi at nobis. Soluta fuga facere reiciendis expedita dolore aperiam ratione. Dolorum, distinctio
-                officia. Excepturi harum ipsam officiis fuga. Animi in, voluptatibus blanditiis quos commodi, quam
-                quisquam architecto accusamus enim ratione laudantium aut. Magnam praesentium officia sit hic. Tempora
-                corrupti provident cupiditate nihil quidem fugit est deserunt harum pariatur ipsam dolores culpa
-                voluptates, excepturi quasi! Sint eum deleniti repellendus dolorum similique? Repellendus, distinctio
-                delectus.</p>
+            <p class="main__section-summary">
+                Para ter uma boa experiência com o fórum e obter as melhores respostas possíveis, a forma como os posts são escritos é muito importante. Por isso, vamos entender como é um tópico realmente bom e um tópico que pode ter melhorias. 
+            </p>
+            <div class="main__section-subjects-list">
+                <section class="main__subjects-list-item">
+                    <div class="topic incorrect">
+                        <h2 class="topic-title incorrect-info">Resposta</h2>
+                        <div class="topic-tags">
+                            <span>Programação</span>
+                            <span>Alura para escolas</span>
+                            <span>Unidade XX</span>
+                        </div>
+                        <div class="topic-place incorrect-info">
+                            <p>Referente à unidade <strong>Unidade XX</strong></p>
+                        </div>
+                        <div class="topic-autor">
+                            <!-- <i class="bi bi-person-circle"></i> -->
+                             <span>J</span>
+                            <p>por <strong>JORGE</strong> | <b>23.9k</b> xp | <b>12</b> posts</p>
+                        </div>
+                        <p class="topic-text incorrect-info">Qual é a resposta?</p>
+                        <!-- <p class="topic-explication">Este tópico tem um título pouco descritivo, não está bem identificado</p> -->
+                    </div>
+                    <span><i class="bi bi-chevron-double-right"></i></span>
+                    <div class="topic correct">
+                        <h2 class="topic-title">[Dúvida] Preciso de ajuda nesse exercício, tentei responder e não consegui</h2>
+                        <div class="topic-tags">
+                            <span>Programação</span>
+                            <span>Alura para escolas</span>
+                            <span>Unidade XX</span>
+                        </div>
+                        <div class="topic-place">
+                            <p>Referente à unidade <strong>Unidade XX</strong>, capítulo <strong>Aula XX</strong> e atividade <strong>Atividade XX</strong></p>
+                        </div>
+                        <div class="topic-autor">
+                            <!-- <i class="bi bi-person-circle"></i> -->
+                             <span>J</span>
+                            <p>por <strong>JORGE</strong> | <b>23.9k</b> xp | <b>12</b> posts</p>
+                        </div>
+                        <p class="topic-text">Eu respondi:<br><br>Bloco 01<br>Bloco 02<br>Bloco 03<br><br> Mas não deu certo assim. Tem algo de errado nessa resposta?</p>
+                    </div>
+                </section>
+                <section class="main__subjects-list-item">
+                    <div class="topic incorrect">
+                        <h2 class="topic-title">Estou com uma dúvida na atividade</h2>
+                        <div class="topic-tags incorrect-info">
+                            <span>Programação</span>
+                            <!-- <span>Alura para escolas</span>
+                            <span>Unidade XX</span> -->
+                        </div>
+                        <div class="topic-place">
+                            <!-- <p>Referente à unidade <strong>Unidade XX</strong>, capítulo <strong>Aula XX</strong> e atividade <strong>Atividade XX</strong></p> -->
+                        </div>
+                        <div class="topic-autor">
+                            <!-- <i class="bi bi-person-circle"></i> -->
+                             <span>L</span>
+                            <p>por <strong>LAURA</strong> | <b>10.6k</b> xp |<b> 8</b> posts</p>
+                        </div>
+                        <p class="topic-text">Preciso muito de ajuda nessa atividade. Podem me ajudar, por favor?</p>
+                    </div>
+                    <span><i class="bi bi-chevron-double-right"></i></span>
+                    <div class="topic correct">
+                        <h2 class="topic-title">Estou com uma dúvida na atividade</h2>
+                        <div class="topic-tags">
+                            <span>Programação</span>
+                            <span>Alura para escolas</span>
+                            <span>Unidade XX</span>
+                        </div>
+                        <div class="topic-place">
+                            <p>Referente à unidade <strong>Unidade XX</strong>, capítulo <strong>Aula XX</strong> e atividade <strong>Atividade XX</strong></p>
+                        </div>
+                        <div class="topic-autor">
+                            <!-- <i class="bi bi-person-circle"></i> -->
+                             <span>L</span>
+                            <p>por <strong>LAURA</strong> | <b>10.6k</b> xp |<b> 8</b> posts</p>
+                        </div>
+                        <p class="topic-text">Preciso muito de ajuda nessa atividade. Podem me ajudar, por favor?</p>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
+    <footer class="footer" style="margin: 100px 0; height: 50vh; width: 1200px; background-color: var(--color-03);">
+    </footer>
     <script src="script.js"></script>
 </body>
 
