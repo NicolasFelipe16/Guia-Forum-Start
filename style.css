@@ -862,6 +862,10 @@ header .forum-link a:hover {
         /* overflow-x: scroll; */
     }
 
+    .main__subjects-list-item-table td{
+        padding: 2px;
+    }
+
     .main__subjects-list-item-table td img{
         width: 30px;
     }
