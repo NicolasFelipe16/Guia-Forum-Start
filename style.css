@@ -827,6 +827,10 @@ header .forum-link a:hover {
 }
 
 @media screen and (max-width:768px) {
+    header .container{
+        width: calc(100% - 50px);
+    }
+
     .header__navigation{
         display: none;
     }
@@ -838,6 +842,14 @@ header .forum-link a:hover {
     header .forum-link a{
         padding: 10px 30px;
         font-size: 12px;
+    }
+
+    .banner .container{
+        width: calc(100% - 50px);
+    }
+
+    .main__section{
+        width: calc(100% - 50px);
     }
 
     .main__section-navigation{
@@ -873,6 +885,10 @@ header .forum-link a:hover {
 
     .main__section#topicos-de-exemplo .topic{
         width: calc(100% - 0px);
+    }
+
+    .main__section#topicos-de-exemplo .topic-tags{
+        flex-wrap: wrap;
     }
 
     .footer__content{
