@@ -36,7 +36,7 @@
 }
 
 *::selection {
-    background-color: var(--color-04);
+    background-color: var(--color-06);
     color: var(--color-01);
 }
 
