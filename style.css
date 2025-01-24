@@ -667,20 +667,14 @@ header .container {
     color: var(--color-06);
 }
 
-/* .footer__content div:first-child img {
-    margin-bottom: 15px;
+.footer__logo {
+    min-width: 80px;
+    width: 140px;
 }
 
-.footer__content div:last-child p {
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #748aa3;
-    font-weight: 600;
+.footer__logo img{
+    width: 100%;
 }
-
-.footer__content div:last-child a {
-    text-transform: uppercase;
-} */
 
 /* MEDIA QUERIES */
 @media screen and (max-width:1280px){
@@ -885,8 +879,4 @@ header .container {
         flex-direction: column;
         align-items: center;
     }
-    
-    /* .footer__content div{
-        text-align: center;
-    } */
 }
